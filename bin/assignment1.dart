@@ -5,6 +5,7 @@ void main()
   Set<int> B = {4, 5, 6, 7, 8};
 
   Set<int> C = A.union(B);
+
   //print("$C");
 
   //print all elements from both of sets
@@ -13,7 +14,15 @@ void main()
     {
       print("$item");
     }
-  print("------------------\n");
+  print("---------------\n");
+
+  //print all elements from both of sets
+  A.addAll(B);
+  for(var item in A)
+    {
+      print("$item");
+    }
+
 
 
   //print all unique elements from both of sets
