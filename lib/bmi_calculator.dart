@@ -3,7 +3,8 @@ void main()
 
   double calcu= calculateBMI(56.00, 1.56);
   String catagory = getBMICategory(calcu);
-  print(catagory);
+  print("Your BMI is: $calcu");
+  print("Catagory: $catagory");
 }
 
 getBMICategory(BMI){
