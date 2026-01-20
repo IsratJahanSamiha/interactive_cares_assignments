@@ -7,28 +7,37 @@ void main()
   print("Catagory: $catagory");
 }
 
-getBMICategory(BMI){
+
+calculateBMI(w,h){
+  double weight = w;
+  double height = h;
+  double bmi = weight / (height * height);
+  return bmi;
+
+}
+
+getBMICategory(bmi){
   //double BMI;
-  if(BMI< 18.5)
+  if(bmi< 18.5)
     {
       String x= "Underweight";
       return x;
     }
   else {
-     if(BMI < 24.9)
+     if(bmi < 24.9)
     {
       String y = "Normal";
       return y;
     }
 
      else{
-       if(BMI < 29.9)
+       if(bmi < 29.9)
        {
          String z = "Overweight";
          return z;
        }
        else{
-         if(BMI >= 30.00 )
+         if(bmi >= 30.00 )
            {
              String j= "Obese";
              return j;
@@ -40,12 +49,3 @@ getBMICategory(BMI){
      }
      }
     }
-
-
-calculateBMI(w,h){
-  double weight = w;
-  double height = h;
-  double BMI = weight / (height * height);
-  return BMI;
-
-}
